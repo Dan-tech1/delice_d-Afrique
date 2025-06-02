@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>les délices d'Afrique</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="style1.css">
+  <script src="form.js" defer></script>
+</head>
+<body>
+  <header>
+     <a href="#acceuil" class="a"><h1>Les délices <span>d'Afrique</span></h1></a>
+    <img src="plat1.jpg" alt="logo du restaurant" id="logo">
+    <nav>
+      <ul>
+        <li><a href="#acceuil"><ion-icon name="home-outline"></ion-icon>acceuil</a></li>
+        <li><a href="#menu"><ion-icon name="restaurant-outline"></ion-icon>Menu</a></li>
+        <li><a href="#a-propos"><ion-icon name="alert-circle-outline"></ion-icon>à props</a></li>
+        <li><a href="#contact"><ion-icon name="mail-outline"></ion-icon>Contact</a></li>
+      </ul>
+    </nav>
+
+  </header>
+
+     <!--ecceuil-->
+  
+  <section id="acceuil">
+    <div>
+      <img src="aa.jpg" alt="image d'accueil" class="img">
+    </div>
+       <h2>Bienvenue aux délices d'Afrique</h2>
+       <p>Découvrez la richesse de la cuisine africaine <br>avec nos plats authentiques et savoureux.</p>
+    </div>
+    <div><a href="#contact"><button class="button"> Savoir plusn </button></a></div>
+  </section>
+
+  <!--menu-->
+
+  <section id="menu">
+    <h2 class="h2">Nos différentes récèttes <ion-icon name="apps-outline"></ion-icon></h2>
+    <div class="menu-container">
+      <div class="menu-item">
+        <img src="plat2.jpg" alt="description image">
+        <h3>Plat 1</h3>
+        <p>Description du plat 1.</p>
+        <span class="price">10€</span>
+      </div>
+
+      <div class="menu-item">
+        <img src="plat4.jpg" alt="description image">
+        <h3>Plat 2</h3>
+        <p>Description du plat 2.</p>
+        <span class="price">12€</span>
+      </div>
+
+      <div class="menu-item">
+        <img src="plat1.jpg" alt="description image">
+        <h3>Plat 3</h3>
+        <p>Description du plat 3.</p>
+        <span class="price">15€</span>
+      </div>
+
+      <div class="menu-item">
+        <img src="plat2.jpg" alt="description image">
+        <h3>Plat 3</h3>
+        <p>Description du plat 3.</p>
+        <span class="price">15€</span>
+      </div>
+
+     <div class="menu-container">
+      <div class="menu-item">
+        <img src="plat2.jpg" alt="description image">
+        <h3>Plat 1</h3>
+        <p>Description du plat 1.</p>
+        <span class="price">10€</span>
+      </div>
+
+      <div class="menu-item">
+        <img src="plat4.jpg" alt="description image">
+        <h3>Plat 2</h3>
+        <p>Description du plat 2.</p>
+        <span class="price">12€</span>
+      </div>
+
+      <div class="menu-item">
+        <img src="plat1.jpg" alt="description image">
+        <h3>Plat 3</h3>
+        <p>Description du plat 3.</p>
+        <span class="price">15€</span>
+      </div>
+
+      <div class="menu-item">
+        <img src="plat2.jpg" alt="description image">
+        <h3>Plat 3</h3>
+        <p>Description du plat 3.</p>
+        <span class="price">15€</span>
+      </div>
+    </div>
+
+  </section>
+
+  <!--à props-->
+
+  <section id="a-propos">
+    <div class="about-container">
+  <div class="about-text">
+    <h2>À propos de nous <ion-icon name="bulb"></ion-icon></h2>
+    <p>Nous sommes passionnés par la cuisine africaine et nous nous <br>
+       engageons à offrir une expérience culinaire authentique.</p>
+  </div>
+  <img src="a.jpg" alt="à propos image" class="about-img">
+</div>
+
+    <h2> Nos principales services <ion-icon name="alert-circle"></ion-icon></h2>
+     
+    <ul>
+  <li><ion-icon name="bicycle-outline"></ion-icon> Livraison à domicile</li>
+  <li><ion-icon name="calendar-outline"></ion-icon> Réservations en ligne</li>
+  <li><ion-icon name="star-outline"></ion-icon> Événements spéciaux</li>
+  <li><ion-icon name="leaf-outline"></ion-icon> Options végétariennes</li>
+</ul>
+  </section>
+
+  <!--contact-->
+  <section id="contact">
+      <legend>Laissez nous un message <ion-icon name="chatbox-ellipses-outline"></ion-icon></legend>
+      <form  action="https://formspree.io/f/mdkeqjpd" method="POST">
+
+        <label for="name">Nom:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" required></textarea>
+
+        <button type="submit">Envoyer</button>
+      </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Les délices d'Afrique. Tous droits réservés.</p>
+   <div class="social-media">
+      <a href="#"><ion-icon name="logo-facebook" class="i1"></ion-icon></a>
+      <a href="#"><ion-icon name="logo-twitter" class="i2"></ion-icon></a>
+      <a href="#"><ion-icon name="logo-instagram" class="i3"></ion-icon></a>
+   </div>
+  </footer>
+
+  <script src="https://unpkg.com/ionicons@5.5.2/dist/ionicons.js"></script>
+</body>
+</html>
