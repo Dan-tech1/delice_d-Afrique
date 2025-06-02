@@ -1,3 +1,16 @@
+.menu-item {
+    -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.604);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.604);
+}
+.menu-item:hover {
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
+}
+.social-media a ion-icon {
+    -webkit-transition: color 0.2s, -webkit-transform 0.2s;
+    transition: color 0.2s, transform 0.2s;
+}
+
 body{
     background-color: #a27d04;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -330,4 +343,53 @@ footer {
 .social-media a:hover ion-icon {
     color: #b70707;
     transform: scale(1.15);
+}
+
+/* Responsive pour tablettes et mobiles */
+@media (max-width: 900px) {
+    .about-container, .menu-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .about-img {
+        width: 90vw;
+        margin-right: 0;
+        margin-top: 20px;
+    }
+    #logo {
+        width: 150px;
+        height: 40px;
+    }
+    section {
+        padding: 60px 5vw;
+    }
+}
+
+@media (max-width: 600px) {
+    header {
+        padding: 10px;
+        text-align: center;
+    }
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+        margin-right: 0;
+    }
+    .menu-item {
+        width: 95vw;
+        padding: 10px;
+    }
+    .img {
+        width: 90vw;
+        height: auto;
+        margin-right: 0;
+        margin-top: 20px;
+    }
+    .about-img {
+        width: 95vw;
+        height: auto;
+    }
+    #contact form {
+        padding: 10px 2vw;
+    }
 }
